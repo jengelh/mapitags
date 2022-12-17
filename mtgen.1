@@ -1,0 +1,29 @@
+.\" SPDX-License-Identifier: CC-BY-SA-4.0 or-later
+.\" SPDX-FileCopyrightText: 2022 Jan Engelhardt
+.TH mtgen 1
+.SH Name
+mtgen \(em MAPI taglist generator
+.SH Synopsis
+\fBmtgen\fP [\fB\-cdep\fP] <mapilist.txt >out.cpp
+.SH Description
+mtgen reads the provided MAPI tag list from standard input and reformats it for
+use with the C and C++ preprocessor and/or for use as a C or C++ program.
+.SH Options
+{\fB\-c\fP, \fB\-d\fP, \fB\-e\fP} override each other.
+.TP
+\fB\-a\fP
+By default, only the first name for a propid is emitted. \-a will cause all names
+to be emitted.
+.TP
+\fB\-c\fP
+Emit C++ constexpr statements.
+.TP
+\fB\-d\fP
+Emit preprocessor #defines.
+.TP
+\fB\-e\fP
+Emit an enum block.
+.TP
+\fB\-p\fP
+By default, only a numeric literal is emitted. \-p will cause definitions to be
+in the form of \fIPROP_TAG(proptype, propid)\fP.
