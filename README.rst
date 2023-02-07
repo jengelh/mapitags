@@ -4,11 +4,16 @@ MAPI Property Tag List
 Definitions
 -----------
 
-* property _tag_: 32-bit unsigned integer, composed of:
-  * bits 31..16: 16-bit property _ID_
-  * bits 15..0: 16-bit property _type_
+* property *tag*: 32-bit unsigned integer, composed of:
+
+  * bits 31..16: 16-bit property *ID*
+
+  * bits 15..0: 16-bit property *type*
+
     * bit 13: instance flag
+
     * bit 12: multivalue flag
+
     * bits 11..0: (no specific name)
 
 MAPI property types and OLE types [MS-OAUT] share some values.
