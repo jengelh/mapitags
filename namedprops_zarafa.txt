@@ -1,0 +1,30 @@
+72e98ebc-57d2-4ab5-b0aa-d50a7b531cb9 PSETID_Archive {
+	s:"archive-type"            0003 dispidType
+	s:"attach-type"             0003 dispidAttachType
+	s:"attached-user-entryid"   0102 dispidAttachedUser
+	s:"dirty"                   000b dispidDirty
+	s:"flags"                   0003 dispidFlags
+	s:"item-entryids"           1102 dispidItemEntryIds
+	s:"original-sourcekey"      0102 dispidOrigSourceKey
+	s:"ref-item-entryid"        0102 dispidRefItemEntryId
+	s:"ref-prev-entryid"        0102 dispidRefPrevEntryId
+	s:"ref-store-entryid"       0102 dispidRefStoreEntryId
+	s:"search-folder-entryids"  1102 dispidSearchFolderEntryIds
+	s:"special-folder-entryids" 1102 dispidSpecialFolderEntryIds
+	s:"store-entryids"          1102 dispidStoreEntryIds
+	s:"stubbed"                 000b dispidStubbed
+	s:"version"                 0003 dispidVersion
+}
+
+77536087-cb81-4dc9-9958-ea4c51be3486 PSETID_Zarafa_CalDav {
+	l:0x0001 0040 dispidMozLastAck // X-MOZ-LAST-ACK
+	l:0x0002 0003 dispidMozGen // X-MOZ-GENERATION
+	l:0x0003 0040 dispidMozSnoozeSuffixTime // X-MOZ-SNOOZE-TIME
+	l:0x0004 000b dispidMozSendInvite // X-MOZ-SEND-INVITATIONS
+	l:0x0025 001e dispidApptTsRef
+	l:0x0026 001e dispidFldID
+
+	// There is an extra bijective mapping it seems.
+	//
+	// s:* 0102 - // XML tag `<ns:tag>` <--> propname s:"ns#tag".
+}

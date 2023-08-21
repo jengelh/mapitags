@@ -1,0 +1,132 @@
+00062004-0000-0000-c000-000000000046 PSETID_Address {
+	l:0x8040 0102 PidLidBusinessCardDisplayDefinition
+	l:0x8045 001f PidLidWorkAddressStreet
+	l:0x8046 001f PidLidWorkAddressCity
+	l:0x8047 001f PidLidWorkAddressState
+	l:0x8048 001f PidLidWorkAddressPostalCode
+	l:0x8049 001f PidLidWorkAddressCountry
+	l:0x804a 001f PidLidWorkAddressPostOfficeBox
+	l:0x804f 001f PidLidContactUserField1
+	l:0x8050 001f PidLidContactUserField2
+	l:0x8051 001f PidLidContactUserField3
+	l:0x8052 001f PidLidContactUserField4
+	l:0x8062 001f PidLidInstantMessagingAddress
+	l:0x8080 001f PidLidEmail1DisplayName
+	l:0x8082 001f PidLidEmail1AddressType
+	l:0x8083 001f PidLidEmail1EmailAddress
+	l:0x8090 001f PidLidEmail2DisplayName
+	l:0x8092 001f PidLidEmail2AddressType
+	l:0x8093 001f PidLidEmail2EmailAddress
+	l:0x80a0 001f PidLidEmail3DisplayName
+	l:0x80a2 001f PidLidEmail3AddressType
+	l:0x80a3 001f PidLidEmail3EmailAddress
+	l:0x80d8 001f PidLidFreeBusyLocation
+}
+
+00062003-0000-0000-c000-000000000046 PSETID_Task {
+	l:0x8101 0003 PidLidTaskStatus
+	l:0x8102 0005 PidLidPercentComplete
+	l:0x8104 0040 PidLidTaskStartDate
+	l:0x8105 0040 PidLidTaskDueDate
+	l:0x810f 0040 PidLidTaskDateCompleted
+	l:0x811c 000b PidLidTaskComplete
+}
+
+00062002-0000-0000-c000-000000000046 PSETID_Appointment {
+	l:0x8201 0003 PidLidAppointmentSequence
+	l:0x8205 0003 PidLidBusyStatus
+	l:0x8208 001f PidLidLocation
+	l:0x8220 0040 PidLidAppointmentReplyTime
+	l:0x820D 0040 PidLidAppointmentStartWhole
+	l:0x820E 0040 PidLidAppointmentEndWhole
+	l:0x8213 0003 PidLidAppointmentDuration
+	l:0x8215 000b PidLidAppointmentSubType
+	l:0x8216 0102 PidLidAppointmentRecur
+	l:0x8217 0003 PidLidAppointmentStateFlags
+	l:0x8218 0003 PidLidResponseStatus
+	l:0x8223 000b PidLidRecurring
+	l:0x8224 0003 PidLidIntendedBusyStatus
+	l:0x8228 0040 PidLidExceptionReplaceTime
+	l:0x8229 000b PidLidFInvited
+	l:0x8231 0003 PidLidRecurrenceType
+	l:0x8232 001f PidLidRecurrencePattern
+	l:0x8233 0102 PidLidTimeZoneStruct
+	l:0x8234 001f PidLidTimeZoneDescription
+	l:0x8235 0040 PidLidClipStart
+	l:0x8236 0040 PidLidClipEnd
+	l:0x8250 0040 PidLidAppointmentProposedStartWhole
+	l:0x8251 0040 PidLidAppointmentProposedEndWhole
+	l:0x8257 000b PidLidAppointmentCounterProposal
+	l:0x825A 000b PidLidAppointmentNotAllowPropose
+	l:0x825E 0102 PidLidAppointmentTimeZoneDefinitionStartDisplay
+	l:0x825F 0102 PidLidAppointmentTimeZoneDefinitionEndDisplay
+	l:0x8260 0102 PidLidAppointmentTimeZoneDefinitionRecur
+}
+
+00062008-0000-0000-c000-000000000046 PSETID_Common {
+	l:0x8501 0003 PidLidReminderDelta
+	l:0x8502 0040 PidLidReminderTime
+	l:0x8503 000b PidLidReminderSet
+	l:0x8506 000b PidLidPrivate
+	l:0x8514 000b PidLidSmartNoAttach
+	l:0x8516 0040 PidLidCommonStart
+	l:0x8517 0040 PidLidCommonEnd
+	l:0x8530 001f PidLidFlagRequest
+	l:0x8560 0040 PidLidReminderSignalTime
+	l:0x85a4 001f PidLidToDoTitle
+	l:0x85b1 001f PidLidInfoPathFromName
+	l:0x85b3 0003 // some codepage identifier
+	l:0x85b5 000b PidLidClassified
+	l:0x85b6 001f PidLidClassification
+	l:0x85b7 001f PidLidClassificationDescription
+	l:0x85b8 001f PidLidClassificationGuid
+	l:0x85bA 000b PidLidClassificationKeep
+}
+
+71035549-0739-4dcb-9163-00f0580dbbdf PSETID_AirSync {
+}
+
+0006200b-0000-0000-c000-000000000046 PSETID_BusinessCardView {
+}
+
+11000e07-b51b-40d6-af21-caa85edab1d0 PSETID_CalendarAssistant {
+}
+
+0006200A-0000-0000-c000-000000000046 PSETID_Log {
+}
+
+6ed8da90-450b-101b-98da-00aa003f1305 PSETID_Meeting {
+}
+
+41f28f13-83f4-4114-a584-eedb5a6b0bff PSETID_Messaging {
+}
+
+0006200E-0000-0000-c000-000000000046 PSETID_Note {
+}
+
+00062041-0000-0000-c000-000000000046 PSETID_PostRSS {
+}
+
+00062014-0000-0000-c000-000000000046 PSETID_Remote {
+}
+
+00062013-0000-0000-c000-000000000046 PSETID_Report {
+}
+
+00062040-0000-0000-c000-000000000046 PSETID_Sharing {
+}
+
+4442858e-a9e3-4e80-b900-317a210cc15b PSETID_UnifiedMessaging {
+}
+
+23239608-685d-4732-9c55-4c95cb4e8e33 PSETID_XMLExtractedEntities {
+}
+
+00020386-0000-0000-c000-000000000046 PS_INTERNET_HEADERS {
+}
+
+00020328-0000-0000-c000-000000000046 PS_MAPI {
+}
+
+00020329-0000-0000-c000-000000000046 PS_PUBLIC_STRINGS {
+}
