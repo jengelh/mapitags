@@ -586,7 +586,7 @@
 0ff80102	PR_MAPPING_SIGNATURE PidTagMappingSignature
 0ff900fb	.RecordKeySvrEid
 0ff90102	PR_RECORD_KEY PidTagRecordKey
-0ffa0102	PR_STORE_RECORD_KEY PidTagStoreRecordKey
+0ffa0102	PR_STORE_RECORD_KEY PidTagStoreRecordKey EDB.Mailbox.MailboxInstanceGuid
 0ffb0102	PR_STORE_ENTRYID PidTagStoreEntryId
 0ffc0102	PR_MINI_ICON PidTagMiniIcon
 0ffd0102	PR_ICON PidTagIcon
@@ -2965,7 +2965,7 @@
 67060003	PR_SERVER_VERSION
 6707001f	PR_URL_NAME .URLName
 67070048	.MailboxDSGuidGuid
-67070102	.MailboxDSGuid
+67070102	.MailboxDSGuid EDB.Mailbox.MailboxGuid
 6708000b	PR_SUBFOLDER
 67080040	.DateDiscoveredAbsentInDS
 67080048	.UnifiedMailboxGuidGuid
@@ -3099,7 +3099,7 @@
 67520003	.IMAPLastArticleId
 6753000b	.Not822Renderable
 67580102	.LTID
-67590102	.CnExport
+67590102	.CnExport EDB.Folder.LcnCurrent
 675a0102	.PclExport
 675b0102	.CnMvExport
 675c0102	.MidsetDeletedExport
@@ -3164,7 +3164,7 @@
 67920102	.FolderIdsetIn
 67920102	.MidsetDeleted
 67930102	MetaTagIdsetExpired .MidsetExpired
-67940102	.CnsetIn
+67940102	.CnsetIn /* cnset={ESE.MailboxIdentity.LocalIdGuid + a bunch of u16/u32} */
 67960102	MetaTagCnsetSeen .CnsetSeen .CnsetBackfill
 67980102	.MidsetTombstones
 679a000b	.GWFolder

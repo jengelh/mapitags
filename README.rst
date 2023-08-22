@@ -22,6 +22,7 @@ Mnemonic names in the text file can have different forms:
 * ``ptagXXX`` shows up in documentation, the reason for this duplication is
   unclear. I suspect style wars in Microsoft source codes.
 * ``.XXX`` are names exposed by C# programming language interfaces.
+* ``EDB.XXTable.XXColumn`` are names exposed by Exchange Server database files.
 * When a property tag has a PR-style name or a PidTag-style canonical name
   already, I have omitted listing the ptag-style variation.
 
