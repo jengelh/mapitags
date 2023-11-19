@@ -1,6 +1,31 @@
 MAPI Property Tag List
 ======================
 
+mapitags.txt is a list of MAPI property tags that Microsoft products exercise
+or reference. For some of the tags, semantics are documented in MS-OXPROPS (or
+related documents; MS-OXPROTLP). For some of the tags, only the mnemonic name
+is known because some program referenced the number. And for some of the tags,
+only the number is known, but where the semantics have been decoded without
+outside assistance.
+
+namedproptags.txt is a (likely very incomplete) list for Named Properties'
+LID/Names and types.
+
+Property tags which are specific to *vendors other than Microsoft* are in
+separate .txt files.
+
+Mnemonic names in the text file can have different forms:
+
+* ``PR_xxx`` are names exposed by the SDKs for the C programming language. The
+  "Inside MAPI" book (1996) also uses the C name.
+* ``PidTagXXX`` is used in documentation and referred to as the "canonical name".
+* ``ptagXXX`` shows up in documentation, the reason for this duplication is
+  unclear. I suspect style wars in Microsoft source codes.
+* ``.XXX`` are names exposed by C# programming language interfaces.
+* When a property tag has a PR-style name or a PidTag-style canonical name
+  already, I have omitted listing the ptag-style variation.
+
+
 Definitions
 -----------
 
