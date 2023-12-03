@@ -3313,7 +3313,7 @@
 681d0040	.MailboxQuarantineEnd
 681e0003	.EventOldParentDefaultFolderType
 681e001f	.MailboxQuarantineFileVersion
-681f0003	.MailboxNum
+681f0003	.MailboxNum EDB.MailboxNumber
 681f0102	.EventFilterResult
 68200003	.InferenceActivityId
 6820001f	PidTagReportingMessageTransferAgent .ReportingMta
