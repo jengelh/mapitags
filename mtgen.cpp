@@ -2,8 +2,10 @@
 // SPDX-FileCopyrightText: 2022 Jan Engelhardt
 #include <cassert>
 #include <cctype>
+#include <cstdint>
 #include <cstdlib>
 #include <cstring>
+#include <getopt.h>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -167,20 +169,22 @@ static void parse_line(const char *input)
 	}
 }
 
-int main(int argc, const char **argv)
+int main(int argc, char **argv)
 {
 	g_mode = M_ENUM;
-	while (*++argv != nullptr)
-		if (strcmp(*argv, "-a") == 0)
+	int c;
+	while ((c = getopt(argc, argv, "acdep")) >= 0) {
+		if (c == 'a')
 			g_allnames = true;
-		else if (strcmp(*argv, "-c") == 0)
+		else if (c == 'c')
 			g_mode = M_CONSTEXPR;
-		else if (strcmp(*argv, "-d") == 0)
+		else if (c == 'd')
 			g_mode = M_DEFINE;
-		else if (strcmp(*argv, "-e") == 0)
+		else if (c == 'e')
 			g_mode = M_ENUM;
-		else if (strcmp(*argv, "-p") == 0)
+		else if (c == 'p')
 			g_pretty = true;
+	}
 	std::string linebuf;
 	if (g_mode == M_ENUM)
 		printf("enum {\n");
