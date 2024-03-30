@@ -83,4 +83,5 @@ General grouping
 
 There are some more reserved ranges, but we need not bother with it.
 NSPI does not have named properties, so 0x8000..0xFFFE are just more
-properties there.
+properties there. Conversely, the properties 0x8000..0xFFFE all belong
+to the addressbook provider.

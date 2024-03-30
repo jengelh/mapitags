@@ -289,7 +289,8 @@
 0433001f	PR_SHARING_XML_OBI_FILE
 0444001f	PR_RSS_XML_CFL_FILE
 08070003	PR_EMS_AB_ROOM_CAPACITY PidTagAddressBookRoomCapacity
-0808101f	PR_EMS_AB_RESOURCE_METADATA
+0806101f	? /* LDAP:msExchResourceDisplay */
+0808101f	PR_EMS_AB_RESOURCE_METADATA /* LDAP:msExchResourceMetaData */
 0809001f	PR_EMS_AB_ROOM_DESCRIPTION PidTagAddressBookRoomDescription
 0c000102	PR_CONTENT_INTEGRITY_CHECK PidTagContentIntegrityCheck
 0c010003	PR_EXPLICIT_CONVERSION PidTagExplicitConversion
@@ -1882,10 +1883,13 @@
 3d13001f	PR_SERVICE_INSTALL_ID PidTagServiceInstallId
 3d140102	PR_PROFILE_RULESMSG_STOREEID
 3d150102	PR_EMSMDB_SECTION_UID PidTagExchangeProfileSectionId
+3d16001f	? /* MSEMS: (one's email address) */
+3d17001f	? /* MSEMS: (empty string) */
 3d18000b	PR_EMSMDB_LEGACY
-3d1a0102	PR_EMSABP_USER_UID
+3d1a0102	PR_EMSABP_USER_UID /* same as PR_EMS_AB_OBJECT_GUID */
 3d1b0003	PR_AB_SEARCH_PATH_CUSTOMIZATION PidTagAbSearchPathCustomization
 3d1c000b	PR_AB_CHOOSE_DIRECTORY_AUTOMATICALLY PidTagAddressBookChooseDirectoryAutomatically
+3d1d001f	? /* MSEMS: (user@example.com_SSPI) */
 3d210102	PR_ADMIN_SECURITY_DESCRIPTOR .AdminSecurityDescriptor
 3d220102	PR_WIN32_SECURITY_DESCRIPTOR .Win32NTSecurityDescriptor
 3d23000b	PR_NON_WIN32_ACL .NonWin32ACL
@@ -2670,19 +2674,20 @@
 66500003	PR_RULE_ACTION_NUMBER PidTagRuleActionNumber
 66510003	PR_CFG_POP3_PORT
 66510102	PR_RULE_FOLDER_ENTRYID PidTagRuleFolderEntryId
-6652001f	? /* MSEMS service: mh_emsmdb URL for the current store (OL2013) */
+6652001f	? /* MSEMS service: in OL2013, possibly Autodiscover.Protocol.MailStore.InternalURL */
 66520102	PR_ACTIVE_USER_ENTRYID .ActiveUserEntryId
 66530003	PR_X400_ENVELOPE_TYPE
-6653001f	? /* MSEMS service: mh_emsmdb URL for the current store (OL2013) */
-6654001f	? /* MSEMS service: mh_nsp URL for the current store (OL2013) */
+6653001f	? /* MSEMS service: in OL2013, possibly Autodiscover.Protocol.MailStore.ExternalURL */
+6654001f	? /* MSEMS service: in OL2013, possibly Autodiscover.Protocol.Addressbook.InternalURL */
 66540040	PR_MSG_FOLD_TIME
-6655001f	? /* MSEMS service: mh_nsp URL for the current store (OL2013) */
+6655001f	? /* MSEMS service: in OL2013, possibly Autodiscover.Protocol.Addressbook.ExternalURL */
 66550102	PR_ICS_CHANGE_KEY .ICSChangeKey
-6656001f	? /* MSEMS service: mh_emsmdb URL for the current store (OL2019) */
+6656001f	? /* MSEMS service: in OL2019, possibly Autodiscover.Protocol.MailStore.ExternalURL */
 6656001f	PR_REPLICA_SERVER_EX
 66570014	PR_REPLICA_VERSION_EX
 66570102	.SetPropsCondition
 66580003	PR_GW_ADMIN_OPERATIONS
+6658001f	? /* MSEMS service: presumably Autodiscover SMTP address */
 6659000b	PR_PROFILE_OFFICE365_MAILBOX
 66590102	PR_INTERNET_CONTENT .InternetContent
 66590103	PR_INTERNET_CONTENT_HANDLE
@@ -3531,7 +3536,7 @@
 68c10003	.ConversationPredictedActionsSummaryMailboxWide
 68c2000b	.ConversationHasClutter
 68c3000b	.ConversationHasClutterMailboxWide
-68c40102	.ExchangeObjectId
+68c40102	.ExchangeObjectId /* same as PR_EMS_AB_OBJECT_GUID */
 68c50102	.ViewLargeRestriction
 68c60003	.ClientDiagnosticLevel
 68c70102	.ClientDiagnosticData
@@ -4266,6 +4271,7 @@
 81c6000b	PR_EMS_AB_OVERRIDE_NNTP_CONTENT_FORMAT
 81c7101f+O	PR_EMS_AB_OBJ_VIEW_CONTAINERS
 81ff0048	PR_TESTCLSID
+8202001f	? /* presumably LDAP:cn or LDAP:name */
 85520003	PR_OUTLOOK_VERSION
 8c180003	PR_EMS_AB_VIEW_FLAGS
 8c19001f	PR_EMS_AB_GROUP_BY_ATTR_VALUE_STR
@@ -4333,12 +4339,13 @@
 8c6a1102	PR_EMS_AB_X509_CERT PidTagAddressBookX509Certificate .Certificate
 8c6b001f	PR_EMS_AB_PERSONAL_TITLE
 8c6c001f	PR_EMS_AB_LANGUAGE_ISO639
-8c6d0102	PR_EMS_AB_OBJECT_GUID PidTagAddressBookObjectGuid .ObjectGuid
+8c6d0102	PR_EMS_AB_OBJECT_GUID PidTagAddressBookObjectGuid .ObjectGuid /* LDAP:objectGUID */
 8c6e0102	PR_EMS_AB_REPLICATION_SIGNATURE
 8c6f1102	PR_EMS_AB_UNMERGED_ATTRIBUTES
 8c70101f	PR_EMS_AB_ADC_GLOBAL_NAMES
 8c71101f+O	PR_EMS_AB_DXA_CONF_CONTAINER_LIST_LINKED
 8c72101f+O	PR_EMS_AB_DXA_UNCONF_CONTAINER_LIST_LINKED
+8c730102	? /* same as MailboxDSGuid */
 8c76101f+O	PR_EMS_AB_DXA_CONF_CONTAINER_LIST_BL
 8c77101f+O	PR_EMS_AB_DXA_UNCONF_CONTAINER_LIST_BL
 8c8e001f	PR_EMS_AB_PHONETIC_GIVEN_NAME PidTagAddressBookPhoneticGivenName
@@ -4354,12 +4361,18 @@
 8c99000d	PR_EMS_AB_HAB_PARENT_DEPARTMENT PidTagAddressBookHierarchicalParentDepartment
 8c9a000d	PR_EMS_AB_HAB_CHILD_DEPARTMENTS PidTagAddressBookHierarchicalChildDepartments
 8c9e0102	PR_EMS_AB_THUMBNAIL_PHOTO PidTagThumbnailPhoto
+8c9f001f	? /* LDAP:msExchUserCulture */
 8ca00003	PR_EMS_AB_HAB_SENIORITY_INDEX PidTagAddressBookSeniorityIndex
 8ca00003	PR_EMS_AB_SENIORITY_INDEX
 8ca8001f	PR_EMS_AB_ORG_UNIT_ROOT_DN PidTagAddressBookOrganizationalUnitRootDistinguishedName
 8cac101f	PR_EMS_AB_DL_SENDER_HINT_TRANSLATIONS PidTagAddressBookSenderHintTranslations
+8cb1001f	? /* LDAP:msExchArbitrationMailbox's LDAP:legacyExchangeDN */
+8cb30003	? /* LDAP:msExchGroupJoinRestriction */
+8cb40003	? /* LDAP:msExchGroupDepartRestriction */
 8cb5000b	PR_EMS_AB_ENABLE_MODERATION PidTagAddressBookModerationEnabled
+8cb60003	? /* LDAP:msExchModerationFlags */
 8cc20102	PR_EMS_AB_UM_SPOKEN_NAME PidTagSpokenName
+8ccc0003	? /* LDAP:msExchTransportRecipientSettingsFlags */
 8cd8000d	PR_EMS_AB_AUTH_ORIG PidTagAddressBookAuthorizedSenders
 8cd9000d	PR_EMS_AB_UNAUTH_ORIG PidTagAddressBookUnauthorizedSenders
 8cda000d	PR_EMS_AB_DL_MEM_SUBMIT_PERMS PidTagAddressBookDistributionListMemberSubmitRejected
@@ -4368,7 +4381,9 @@
 8cdd000b	PR_EMS_AB_IS_ORGANIZATIONAL
 8ce20003	PR_EMS_AB_DL_TOTAL_MEMBER_COUNT PidTagAddressBookDistributionListMemberCount
 8ce30003	PR_EMS_AB_DL_EXTERNAL_MEMBER_COUNT PidTagAddressBookDistributionListExternalMemberCount
+8cec0003	? /* LDAP:msExchAddressBookFlags */
 8d0d001f	PR_EMS_AB_EXTERNAL_OBJECT_ID .ExternalDirectoryObjectId
+8d0f0003	? /* LDAP:msExchGroupSecurityFlags */
 d1000003	PR_PAB_PRIMARY_TELEPHONE_INDEX
 d101000b	PR_HIDE_FROM_ADDRESS_BOOK
 e1000003	PR_PAB_DATABASE_VERSION
