@@ -80,7 +80,7 @@
 	l:0x85b6 001f PidLidClassification
 	l:0x85b7 001f PidLidClassificationDescription
 	l:0x85b8 001f PidLidClassificationGuid
-	l:0x85bA 000b PidLidClassificationKeep
+	l:0x85ba 000b PidLidClassificationKeep
 }
 
 71035549-0739-4dcb-9163-00f0580dbbdf PSETID_AirSync {
@@ -90,6 +90,9 @@
 }
 
 11000e07-b51b-40d6-af21-caa85edab1d0 PSETID_CalendarAssistant {
+	l:0x0015 0003 PidLidClientIntent
+	l:0x85cc 000b PidLidServerProcessed
+	l:0x85cd 0003 PidLidServerProcessingActions
 }
 
 0006200A-0000-0000-c000-000000000046 PSETID_Log {
