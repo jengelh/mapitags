@@ -1,5 +1,8 @@
 1de937e2-85c6-40a1-bd9d-a6e2b7b787b1 PSETID_Gromox {
 	s:"photo" 0102 -
 	s:"vcarduid" 001f -
+	s:"websettings" 001f -
+	s:"websettings_persistent" 001f -
+	s:"websettings_recipienthistory" 001f -
 	s:"zcore_profsect" 0102 -
 }

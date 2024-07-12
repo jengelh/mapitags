@@ -1,86 +1,292 @@
 00062004-0000-0000-c000-000000000046 PSETID_Address {
+	l:0x8005 001f PidLidFileUnder
+	l:0x8006 0003 PidLidFileUnderId
+	l:0x8007 1003 PidLidContactItemData
+	l:0x800e 001f dispidReferredBy
+	l:0x8010 001f PidLidDepartment
+	l:0x8015 000b PidLidHasPicture
+	l:0x801a 001f PidLidHomeAddress
+	l:0x801b 001f PidLidWorkAddress
+	l:0x801c 001f PidLidOtherAddress
+	l:0x8022 0003 PidLidPostalAddressId
+	l:0x8023 0003 PidLidContactCharacterSet
+	l:0x8025 000b PidLidAutoLog
+	l:0x8026 1003 PidLidFileUnderList
+	l:0x8028 1003 PidLidAddressBookProviderEmailList
+	l:0x8029 0003 PidLidAddressBookProviderArrayType
+	l:0x802b 001f PidLidHtml
+	l:0x802c 001f PidLidYomiFirstName
+	l:0x802d 001f PidLidYomiLastName
+	l:0x802e 001f PidLidYomiCompanyName
 	l:0x8040 0102 PidLidBusinessCardDisplayDefinition
+	l:0x8041 0102 PidLidBusinessCardCardPicture
 	l:0x8045 001f PidLidWorkAddressStreet
 	l:0x8046 001f PidLidWorkAddressCity
 	l:0x8047 001f PidLidWorkAddressState
 	l:0x8048 001f PidLidWorkAddressPostalCode
 	l:0x8049 001f PidLidWorkAddressCountry
 	l:0x804a 001f PidLidWorkAddressPostOfficeBox
+	l:0x804c 0003 PidLidDistributionListChecksum
+	l:0x804d 0102 PidLidBirthdayEventEntryId
+	l:0x804e 0102 PidLidAnniversaryEventEntryId
 	l:0x804f 001f PidLidContactUserField1
 	l:0x8050 001f PidLidContactUserField2
 	l:0x8051 001f PidLidContactUserField3
 	l:0x8052 001f PidLidContactUserField4
+	l:0x8053 001f PidLidDistributionListName
+	l:0x8054 1102 PidLidDistributionListOneOffMembers
+	l:0x8055 1102 PidLidDistributionListMembers
 	l:0x8062 001f PidLidInstantMessagingAddress
+	l:0x8064 0102 PidLidDistributionListStream
 	l:0x8080 001f PidLidEmail1DisplayName
 	l:0x8082 001f PidLidEmail1AddressType
 	l:0x8083 001f PidLidEmail1EmailAddress
+	l:0x8084 001f PidLidEmail1OriginalDisplayName
+	l:0x8085 0102 PidLidEmail1OriginalEntryId
+	l:0x8086 000b dispidEmail1RTF
+	l:0x8087 001f PidLidEmail1EmailType
 	l:0x8090 001f PidLidEmail2DisplayName
 	l:0x8092 001f PidLidEmail2AddressType
 	l:0x8093 001f PidLidEmail2EmailAddress
+	l:0x8094 001f PidLidEmail2OriginalDisplayName
+	l:0x8095 0102 PidLidEmail2OriginalEntryId
+	l:0x8096 000b dispidEmail2RTF
+	l:0x8097 001f PidLidEmail2EmailType
 	l:0x80a0 001f PidLidEmail3DisplayName
 	l:0x80a2 001f PidLidEmail3AddressType
 	l:0x80a3 001f PidLidEmail3EmailAddress
+	l:0x80a4 001f PidLidEmail3OriginalDisplayName
+	l:0x80a5 0102 PidLidEmail3OriginalEntryId
+	l:0x80a6 000b dispidEmail3RTF
+	l:0x80a7 001f PidLidEmail3EmailType
+	l:0x80b0 001f PidLidFax1DisplayName
+	l:0x80b1 0102 PidLidFax1EntryId
+	l:0x80b2 001f PidLidFax1AddressType
+	l:0x80b3 001f PidLidFax1EmailAddress
+	l:0x80b4 001f PidLidFax1OriginalDisplayName
+	l:0x80b5 0102 PidLidFax1OriginalEntryId
+	l:0x80b6 000b PidLidFax1RichTextFormat
+	l:0x80b7 001f PidLidFax1EmailType
+	l:0x80c0 001f PidLidFax2DisplayName
+	l:0x80c1 0102 PidLidFax2EntryId
+	l:0x80c2 001f PidLidFax2AddressType
+	l:0x80c3 001f PidLidFax2EmailAddress
+	l:0x80c4 001f PidLidFax2OriginalDisplayName
+	l:0x80c5 0102 PidLidFax2OriginalEntryId
+	l:0x80c6 000b PidLidFax2RichTextFormat
+	l:0x80c7 001f PidLidFax2EmailType
+	l:0x80d0 001f PidLidFax3DisplayName
+	l:0x80d1 0102 PidLidFax3EntryId
+	l:0x80d2 001f PidLidFax3AddressType
+	l:0x80d3 001f PidLidFax3EmailAddress
+	l:0x80d4 001f PidLidFax3OriginalDisplayName
+	l:0x80d5 0102 PidLidFax3OriginalEntryId
+	l:0x80d6 000b PidLidFax3RichTextFormat
+	l:0x80d7 001f PidLidFax3EmailType
 	l:0x80d8 001f PidLidFreeBusyLocation
+	l:0x80d9 1102 PidLidUserX509Certificate
+	l:0x80da 001f PidLidHomeAddressCountryCode
+	l:0x80db 001f PidLidWorkAddressCountryCode
+	l:0x80dc 001f PidLidOtherAddressCountryCode
+	l:0x80dd 001f PidLidAddressCountryCode
+	l:0x80de 0040 PidLidBirthdayLocal
+	l:0x80df 0040 PidLidWeddingAnniversaryLocal
+	l:0x80e0 000b PidLidIsContactLinked
+	l:0x80e2 0102 PidLidContactLinkedGlobalAddressListEntryId
+	l:0x80e3 101f PidLidContactLinkSMTPAddressCache
+	l:0x80e5 1012 PidLidContactLinkLinkRejectHistory
+	l:0x80e6 0003 PidLidContactLinkGlobalAddressListLinkState
+	l:0x80e8 0048 PidLidContactLinkGlobalAddressListLinkId
 }
 
 00062003-0000-0000-c000-000000000046 PSETID_Task {
 	l:0x8101 0003 PidLidTaskStatus
 	l:0x8102 0005 PidLidPercentComplete
+	l:0x8103 000b PidLidTeamTask
 	l:0x8104 0040 PidLidTaskStartDate
 	l:0x8105 0040 PidLidTaskDueDate
+	l:0x8107 000b PidLidTaskResetReminder
+	l:0x8108 000b PidLidTaskAccepted
+	l:0x8109 000b PidLidTaskDeadOccurrence
 	l:0x810f 0040 PidLidTaskDateCompleted
+	l:0x8110 0003 PidLidTaskActualEffort
+	l:0x8111 0003 PidLidTaskEstimatedEffort
+	l:0x8112 0003 PidLidTaskVersion
+	l:0x8113 0003 PidLidTaskState
+	l:0x8115 0040 PidLidTaskLastUpdate
+	l:0x8116 0102 PidLidTaskRecurrence
+	l:0x8117 0102 PidLidTaskAssigners
+	l:0x8119 000b PidLidTaskStatusOnComplete
+	l:0x811a 0003 PidLidTaskHistory
+	l:0x811b 000b PidLidTaskUpdates
 	l:0x811c 000b PidLidTaskComplete
+	l:0x811e 000b PidLidTaskFCreator
+	l:0x811f 001f PidLidTaskOwner
+	l:0x8120 0003 PidLidTaskMultipleRecipients
+	l:0x8121 001f PidLidTaskAssigner
+	l:0x8122 001f PidLidTaskLastUser
+	l:0x8123 0003 PidLidTaskOrdinal
+	l:0x8124 000b PidLidTaskNoCompute
+	l:0x8125 001f PidLidTaskLastDelegate
+	l:0x8126 000b PidLidTaskFRecurring
+	l:0x8127 001f PidLidTaskRole
+	l:0x8129 0003 PidLidTaskOwnership
+	l:0x812a 0003 PidLidTaskAcceptanceState
+	l:0x812c 000b PidLidTaskFFixOffline
+	l:0x8139 0003 PidLidTaskCustomFlags
 }
 
 00062002-0000-0000-c000-000000000046 PSETID_Appointment {
+	l:0x8200 000b PidLidSendMeetingAsIcal
 	l:0x8201 0003 PidLidAppointmentSequence
+	l:0x8202 0040 PidLidAppointmentSequenceTime
+	l:0x8203 0003 PidLidAppointmentLastSequence
+	l:0x8204 0003 PidLidChangeHighlight
 	l:0x8205 0003 PidLidBusyStatus
+	l:0x8206 000b PidLidFExceptionalBody
+	l:0x8207 0003 PidLidAppointmentAuxiliaryFlags
 	l:0x8208 001f PidLidLocation
-	l:0x8220 0040 PidLidAppointmentReplyTime
+	l:0x8209 001f PidLidMeetingWorkspaceUrl
+	l:0x820a 000b PidLidForwardInstance
+	l:0x820c 1102 PidLidLinkedTaskItems
 	l:0x820D 0040 PidLidAppointmentStartWhole
 	l:0x820E 0040 PidLidAppointmentEndWhole
-	l:0x8213 0003 PidLidAppointmentDuration
+	l:0x820f 0040 PidLidAppointmentStartTime
+	l:0x8210 0040 PidLidAppointmentEndTime
+	l:0x8211 0040 PidLidAppointmentEndDate
+	l:0x8212 0040 PidLidAppointmentStartDate
+	l:0x8213 0040 PidLidAppointmentDuration
+	l:0x8214 0003 PidLidAppointmentColor
 	l:0x8215 000b PidLidAppointmentSubType
 	l:0x8216 0102 PidLidAppointmentRecur
 	l:0x8217 0003 PidLidAppointmentStateFlags
 	l:0x8218 0003 PidLidResponseStatus
+	l:0x8220 0040 PidLidAppointmentReplyTime
 	l:0x8223 000b PidLidRecurring
 	l:0x8224 0003 PidLidIntendedBusyStatus
+	l:0x8226 0040 PidLidAppointmentUpdateTime
 	l:0x8228 0040 PidLidExceptionReplaceTime
 	l:0x8229 000b PidLidFInvited
+	l:0x822b 000b PidLidFExceptionalAttendees
+	l:0x822e 001f PidLidOwnerName
+	l:0x822f 000b PidLidFOthersAppointment
+	l:0x8230 001f PidLidAppointmentReplyName
 	l:0x8231 0003 PidLidRecurrenceType
 	l:0x8232 001f PidLidRecurrencePattern
 	l:0x8233 0102 PidLidTimeZoneStruct
 	l:0x8234 001f PidLidTimeZoneDescription
 	l:0x8235 0040 PidLidClipStart
 	l:0x8236 0040 PidLidClipEnd
+	l:0x8237 0102 PidLidOriginalStoreEntryId
+	l:0x8238 001f PidLidAllAttendeesString
+	l:0x823a 000b PidLidAutoFillLocation
+	l:0x823b 001f PidLidToAttendeesString
+	l:0x823c 001f PidLidCcAttendeesString
+	l:0x823e 000b dispidTrustRecipHighlights
+	l:0x8240 000b PidLidConferencingCheck
+	l:0x8241 0003 PidLidConferencingType
+	l:0x8242 001f PidLidDirectory
+	l:0x8243 001f PidLidOrganizerAlias
+	l:0x8244 000b PidLidAutoStartCheck
+	l:0x8245 0003 PidLidAutoStartWhen
+	l:0x8246 000b PidLidAllowExternalCheck
+	l:0x8247 001f PidLidCollaborateDoc
+	l:0x8248 001f PidLidNetShowUrl
+	l:0x8249 001f PidLidOnlinePassword
 	l:0x8250 0040 PidLidAppointmentProposedStartWhole
 	l:0x8251 0040 PidLidAppointmentProposedEndWhole
+	l:0x8256 0003 PidLidAppointmentProposedDuration
 	l:0x8257 000b PidLidAppointmentCounterProposal
+	l:0x8259 0003 PidLidAppointmentProposalNumber
 	l:0x825A 000b PidLidAppointmentNotAllowPropose
+	l:0x825d 0102 PidLidAppointmentUnsendableRecipients
 	l:0x825E 0102 PidLidAppointmentTimeZoneDefinitionStartDisplay
 	l:0x825F 0102 PidLidAppointmentTimeZoneDefinitionEndDisplay
 	l:0x8260 0102 PidLidAppointmentTimeZoneDefinitionRecur
+	l:0x8261 0102 PidLidForwardNotificationRecipients
+	l:0x827a 0102 PidLidInboundICalStream
 }
 
 00062008-0000-0000-c000-000000000046 PSETID_Common {
+	l:0x1000 0003 PidLidDayOfMonth
+	l:0x1001 0003 PidLidICalendarDayOfWeekMask
+	l:0x1005 0003 PidLidOccurrences
+	l:0x1006 0003 PidLidMonthOfYear
+	l:0x100b 000b PidLidNoEndDateFlag
+	l:0x100d 0003 PidLidRecurrenceDuration
+	l:0x8045 000b PidLidPromptSendUpdate
 	l:0x8501 0003 PidLidReminderDelta
 	l:0x8502 0040 PidLidReminderTime
 	l:0x8503 000b PidLidReminderSet
+	l:0x8504 0040 PidLidReminderTimeTime
+	l:0x8505 0040 PidLidReminderTimeDate
 	l:0x8506 000b PidLidPrivate
+	l:0x850e 000b PidLidAgingDontAgeMe
+	l:0x850f 0102 dispidFormStorage
+	l:0x8510 0003 dispidSideEffects
+	l:0x8511 0003 dispidRemoteStatus
 	l:0x8514 000b PidLidSmartNoAttach
 	l:0x8516 0040 PidLidCommonStart
 	l:0x8517 0040 PidLidCommonEnd
+	l:0x8518 0003 PidLidTaskMode
+	l:0x8519 0102 PidLidTaskGlobalId
+	l:0x851a 0003 PidLidAutoProcessState
+	l:0x851b 0102 dispidFormPropStream
+	l:0x851c 000b PidLidReminderOverride
+	l:0x851d 0003 PidLidReminderType
+	l:0x851e 000b PidLidReminderPlaySound
+	l:0x851f 001f PidLidReminderFileParameter
+	l:0x8520 0102 PidLidVerbStream
+	l:0x8524 001f PidLidVerbResponse
 	l:0x8530 001f PidLidFlagRequest
+	l:0x8534 001f PidLidMileage
+	l:0x8535 001f PidLidBilling
+	l:0x8536 001f PidLidNonSendableTo
+	l:0x8537 001f PidLidNonSendableCc
+	l:0x8538 001f PidLidNonSendableBcc
+	l:0x8539 101f PidLidCompanies
+	l:0x853a 101f PidLidContacts
+	l:0x8540 0102 PidLidPropertyDefinitionStream
+	l:0x8541 0102 dispidScriptStream
+	l:0x8543 1003 PidLidNonSendToTrackStatus
+	l:0x8544 1003 PidLidNonSendCcTrackStatus
+	l:0x8545 1003 PidLidNonSendBccTrackStatus
+	l:0x8549 0040 PidLidRecallTime
+	l:0x8552 0003 PidLidCurrentVersion
+	l:0x8554 001f PidLidCurrentVersionName
 	l:0x8560 0040 PidLidReminderSignalTime
+	l:0x8570 0003 PidLidImapDeleted
+	l:0x8580 001f PidLidInternetAccountName
+	l:0x8581 001f PidLidInternetAccountStamp
+	l:0x8582 000b PidLidUseTnef
+	l:0x8584 0102 PidLidContactLinkSearchKey
+	l:0x8585 0102 PidLidContactLinkEntry
+	l:0x8586 001f PidLidContactLinkName
+	l:0x8593 0003 PidLidImageAttachmentsCompressionLevel
+	l:0x859b 000b PidLidIsInterpersonalFax
+	l:0x859c 0102 PidLidSpamOriginalFolder
+	l:0x85a0 0040 PidLidToDoOrdinalDate
+	l:0x85a1 001f PidLidToDoSubOrdinal
 	l:0x85a4 001f PidLidToDoTitle
+	l:0x85a5 000b PidLidFShouldTNEF
 	l:0x85b1 001f PidLidInfoPathFromName
 	l:0x85b3 0003 // some codepage identifier
 	l:0x85b5 000b PidLidClassified
 	l:0x85b6 001f PidLidClassification
 	l:0x85b7 001f PidLidClassificationDescription
 	l:0x85b8 001f PidLidClassificationGuid
+	l:0x85b9 0003 PidLidOfflineStatus
 	l:0x85ba 000b PidLidClassificationKeep
+	l:0x85bd 0102 PidLidReferenceEntryId
+	l:0x85bf 0040 PidLidValidFlagStringProof
+	l:0x85c0 0003 PidLidFlagString
+	l:0x85c6 0102 PidLidConversationActionMoveFolderEid
+	l:0x85c7 0102 PidLidConversationActionMoveStoreEid
+	l:0x85c8 0040 PidLidConversationActionMaxDeliveryTime
+	l:0x85c9 0003 PidLidConversationProcessed
+	l:0x85ca 0040 PidLidConversationActionLastAppliedTime
+	l:0x85cb 0003 PidLidConversationActionVersion
+	l:0x85e0 0003 PidLidPendingStateForSiteMailboxDocument
 }
 
 71035549-0739-4dcb-9163-00f0580dbbdf PSETID_AirSync {
@@ -96,27 +302,159 @@
 }
 
 0006200A-0000-0000-c000-000000000046 PSETID_Log {
+	l:0x8700 001f PidLidLogType
+	l:0x8706 0040 PidLidLogStart
+	l:0x8707 0003 PidLidLogDuration
+	l:0x8708 0040 PidLidLogEnd
+	l:0x870c 0003 PidLidLogFlags
+	l:0x870e 000b PidLidLogDocumentPrinted
+	l:0x870f 000b PidLidLogDocumentSaved
+	l:0x8710 000b PidLidLogDocumentRouted
+	l:0x8711 000b PidLidLogDocumentPosted
+	l:0x8712 001f PidLidLogTypeDesc
 }
 
 6ed8da90-450b-101b-98da-00aa003f1305 PSETID_Meeting {
+	l:0x0001 0040 PidLidAttendeeCriticalChange
+	l:0x0002 001f PidLidWhere
+	l:0x0003 0102 PidLidGlobalObjectId
+	l:0x0004 000b PidLidIsSilent
+	l:0x0005 000b PidLidIsRecurring
+	l:0x0006 001f PidLidRequiredAttendees
+	l:0x0007 001f PidLidOptionalAttendees
+	l:0x0008 001f PidLidResourceAttendees
+	l:0x0009 000b PidLidDelegateMail
+	l:0x000a 000b PidLidIsException
+	l:0x000b 000b PidLidSingleInvite
+	l:0x000c 0003 PidLidTimeZone
+	l:0x000d 0003 PidLidStartRecurrenceDate
+	l:0x000e 0003 PidLidStartRecurrenceTime
+	l:0x000f 0003 PidLidEndRecurrenceDate
+	l:0x0010 0003 PidLidEndRecurrenceTime
+	l:0x0011 0002 PidLidDayInterval
+	l:0x0012 0002 PidLidWeekInterval
+	l:0x0013 0002 PidLidMonthInterval
+	l:0x0014 0002 PidLidYearInterval
+	l:0x0017 0003 PidLidMonthOfYearMask
+	l:0x0018 0002 PidLidOldRecurrenceType
+	l:0x001a 0040 PidLidOwnerCriticalChange
+	l:0x001a 0003 PidLidCalendarType
+	l:0x001a 001f PidLidAllAttendeesList
+	l:0x0023 0102 PidLidCleanGlobalObjectId
+	l:0x0024 001f PidLidAppointmentMessageClass
+	l:0x0026 0003 PidLidMeetingType
+	l:0x0028 001f PidLidOldLocation
+	l:0x0029 0040 PidLidOldWhenStartWhole
+	l:0x002a 0040 PidLidOldWhenEndWhole
+	l:0x8c23 0102 dispidCleanGlobalObjId
+	l:0x8c24 001f dispidApptMessageClass
+	l:0x8c26 0003 dispidMeetingType
+	l:0x8c28 001f dispidOldLocation
+	l:0x8c29 0040 dispidOldWhenStartWhole
+	l:0x8c2a 0040 dispidOldWhenEndWhole
 }
 
 41f28f13-83f4-4114-a584-eedb5a6b0bff PSETID_Messaging {
 }
 
 0006200E-0000-0000-c000-000000000046 PSETID_Note {
+	l:0x8b00 0003 PidLidNoteColor
+	l:0x8b02 0003 PidLidNoteWidth
+	l:0x8b03 0003 PidLidNoteHeight
+	l:0x8b04 0003 PidLidNoteX
+	l:0x8b05 0003 PidLidNoteY
 }
 
 00062041-0000-0000-c000-000000000046 PSETID_PostRSS {
+	l:0x8900 001f PidLidPostRssChannelLink
+	l:0x8901 001f PidLidPostRssItemLink
+	l:0x8902 0003 PidLidPostRssItemHash
+	l:0x8903 001f PidLidPostRssItemGuid
+	l:0x8904 001f PidLidPostRssChannel
+	l:0x8905 001f PidLidPostRssItemXml
+	l:0x8906 001f PidLidPostRssSubscription
 }
 
 00062014-0000-0000-c000-000000000046 PSETID_Remote {
+	l:0x8f01 0102 PidLidRemoteEntryId
+	l:0x8f02 001f PidLidRemoteMessageClass
+	l:0x8f03 001f PidLidRemoteTransport
+	l:0x8f04 0003 PidLidRemoteTransferTime
+	l:0x8f05 0003 PidLidRemoteTransferSize
+	l:0x8f06 0102 PidLidRemoteSearchKey
+	l:0x8f07 000b PidLidRemoteAttachment
 }
 
 00062013-0000-0000-c000-000000000046 PSETID_Report {
+	l:0x8d00 0040 PidLidResendTime
 }
 
 00062040-0000-0000-c000-000000000046 PSETID_Sharing {
+	l:0x8a00 0003 PidLidSharingStatus
+	l:0x8a01 0048 PidLidSharingProviderGuid
+	l:0x8a02 001f PidLidSharingProviderName
+	l:0x8a03 001f PidLidSharingProviderUrl
+	l:0x8a04 001f PidLidSharingRemotePath
+	l:0x8a05 001f PidLidSharingRemoteName
+	l:0x8a06 001f PidLidSharingRemoteUid
+	l:0x8a07 001f PidLidSharingInitiatorName
+	l:0x8a08 001f PidLidSharingInitiatorSmtp
+	l:0x8a09 0102 PidLidSharingInitiatorEntryId
+	l:0x8a0a 0003 PidLidSharingFlags
+	l:0x8a0b 001f PidLidSharingProviderExtension
+	l:0x8a0c 001f PidLidSharingRemoteUser
+	l:0x8a0d 001f PidLidSharingRemotePass
+	l:0x8a0e 001f PidLidSharingLocalPath
+	l:0x8a0f 001f PidLidSharingLocalName
+	l:0x8a10 001f PidLidSharingLocalUid
+	l:0x8a13 0102 PidLidSharingFilter
+	l:0x8a14 001f PidLidSharingLocalType
+	l:0x8a15 0102 PidLidSharingFolderEntryId
+	l:0x8a17 0003 PidLidSharingCapabilities
+	l:0x8a18 0003 PidLidSharingFlavor
+	l:0x8a19 0003 PidLidSharingAnonymity
+	l:0x8a1a 0003 PidLidSharingReciprocation
+	l:0x8a1b 0003 PidLidSharingPermissions
+	l:0x8a1c 0048 PidLidSharingInstanceGuid
+	l:0x8a1d 001f PidLidSharingRemoteType
+	l:0x8a1e 001f PidLidSharingParticipants
+	l:0x8a1f 0040 PidLidSharingLastSyncTime
+	l:0x8a21 001f PidLidSharingExtensionXml
+	l:0x8a22 0040 PidLidSharingRemoteLastModificationTime
+	l:0x8a23 0040 PidLidSharingLocalLastModificationTime
+	l:0x8a24 001f PidLidSharingConfigurationUrl
+	l:0x8a25 0040 PidLidSharingStart
+	l:0x8a26 0040 PidLidSharingStop
+	l:0x8a27 0003 PidLidSharingResponseType
+	l:0x8a28 0040 PidLidSharingResponseTime
+	l:0x8a29 0102 PidLidSharingOriginalMessageEntryId
+	l:0x8a2a 0003 PidLidSharingSyncInterval
+	l:0x8a2b 0003 PidLidSharingDetail
+	l:0x8a2c 0003 PidLidSharingTimeToLive
+	l:0x8a2d 0102 PidLidSharingBindingEntryId
+	l:0x8a2e 0102 PidLidSharingIndexEntryId
+	l:0x8a2f 001f PidLidSharingRemoteComment
+	l:0x8a40 0040 PidLidSharingWorkingHoursStart
+	l:0x8a41 0040 PidLidSharingWorkingHoursEnd
+	l:0x8a42 0003 PidLidSharingWorkingHoursDays
+	l:0x8a43 0102 PidLidSharingWorkingHoursTimeZone
+	l:0x8a44 0040 PidLidSharingDataRangeStart
+	l:0x8a45 0040 PidLidSharingDataRangeEnd
+	l:0x8a46 0003 PidLidSharingRangeStart
+	l:0x8a47 0003 PidLidSharingRangeEnd
+	l:0x8a48 001f PidLidSharingRemoteStoreUid
+	l:0x8a49 001f PidLidSharingLocalStoreUid
+	l:0x8a4b 0003 PidLidSharingRemoteByteSize
+	l:0x8a4c 0003 PidLidSharingRemoteCrc
+	l:0x8a4d 001f PidLidSharingLocalComment
+	l:0x8a4e 0003 PidLidSharingRoamLog
+	l:0x8a4f 0003 PidLidSharingRemoteMessageCount
+	l:0x8a51 001f PidLidSharingBrowseUrl
+	l:0x8a55 0040 PidLidSharingLastAutoSyncTime
+	l:0x8a56 0003 PidLidSharingTimeToLiveAuto
+	l:0x8a5b 001f PidLidSharingRemoteVersion
+	l:0x8a5c 0102 PidLidSharingParentBindingEntryId
+	l:0x8a60 0003 PidLidSharingSyncFlags
 }
 
 4442858e-a9e3-4e80-b900-317a210cc15b PSETID_UnifiedMessaging {
@@ -132,4 +470,5 @@
 }
 
 00020329-0000-0000-c000-000000000046 PS_PUBLIC_STRINGS {
+	l:0x9000 101f PidLidCategories
 }
