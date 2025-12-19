@@ -286,7 +286,9 @@
 	l:0x85c9 0003 PidLidConversationProcessed
 	l:0x85ca 0040 PidLidConversationActionLastAppliedTime
 	l:0x85cb 0003 PidLidConversationActionVersion
+	l:0x85d8 001f // original message class before a meeting request was transferred into calendar
 	l:0x85e0 0003 PidLidPendingStateForSiteMailboxDocument
+	l:0x85eb 0003 // an LCID value (e.g. 0x407 English)
 }
 
 71035549-0739-4dcb-9163-00f0580dbbdf PSETID_AirSync {
