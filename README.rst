@@ -78,10 +78,23 @@ General grouping
 	 ┗━ Message class-specific props:  0x6800..0x7FFF
 	     ┣━ Content props:             0x6800..0x7BFF
 	     ┗━ Non-transmittable:         0x7C00..0x7FFF (non-transmittable)
-	Mapping range for named props:     0x8000..0xFFFE
 	Reserved:                          0xFFFF
 
 There are some more reserved ranges, but we need not bother with it.
 
-NSPI does not have named properties, so 0x8000..0xFFFE are just more
-tagged properties there.
+Named Properties are conceptually only defined for mailboxes. Every mailbox has
+a potentially distinct set of ids given to Named Properties.
+
+```
+	Mapping range for named props:     0x8000..0xFFFE
+```
+
+Address books do not have named properties. The NSP protocol lacks
+corresponding RPCs to translate propnames from and to propids. The
+IMAPIProp::GetNamesFromIDs function in the C/C++ API returns
+MAPI_E_NOT_IMPLEMENTED. The leftover space is given to regular
+properties.
+
+```
+	Tagged props (cont'd):             0x8000..0xFFFE
+```
