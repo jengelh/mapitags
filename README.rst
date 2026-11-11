@@ -3,10 +3,10 @@ MAPI Property Tag List
 
 mapitags.txt is a list of MAPI property tags that Microsoft products exercise
 or reference. For some of the tags, semantics are documented in MS-OXPROPS (or
-related documents; MS-OXPROTLP). For some of the tags, only the mnemonic name
-is known because some program referenced the number. And for some of the tags,
-only the number is known, but where the semantics have been decoded without
-outside assistance.
+related documents; MS-OXPROTLP). For some of the tags, their ID-name is known
+from executable dumps, while the tags do not have their semantics documented at
+all. For some of the tags, the mnemonic name is not known, but the semantic
+established by careful observation.
 
 namedproptags.txt is a (likely very incomplete) list for Named Properties'
 LID/Names and types.
